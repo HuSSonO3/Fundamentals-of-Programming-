@@ -67,7 +67,7 @@ public class L2 {
         int hour = x;
         int seconds = x % 60;
         hour /= 60;
-        int minutes = x % 60;
+        int minutes = hour % 60;
         hour /= 60;
         
         System.out.println(x + " seconds is " + hour + " hours, " + minutes + " minutes and "+ seconds + " seconds.");

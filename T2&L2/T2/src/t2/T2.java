@@ -49,14 +49,15 @@ public class T2 {
         String chapter = "Summary";
         System.out.println(chapter);
         
-        //C
-        //int num = 0;
-        //num++; 
-        //int num1 = num;
+        //C 
+        int num = 0;
+        num++; 
+        int num1 = num;
         
-        //D
-        double num = 3000; // int can't be used as f like below so we change it to double or float or delete the format.
-        System.out.printf("%4.2f\n", num);
+        //D 
+        //this will bring error since num was already declared in the previous question so i commented it instead.
+        //double num = 3000; // int can't be used as f like below so we change it to double or float or delete the format.
+        //System.out.printf("%4.2f\n", num);
         
         //E
         String contact;

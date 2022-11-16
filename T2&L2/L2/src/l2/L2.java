@@ -107,9 +107,6 @@ public class L2 {
         NumberFormat numberformat = new DecimalFormat("0.######E00");
         System.out.println("The Energy Needed is "+ numberformat.format(Energy));
         
-       
-        
-        
         
     }
     

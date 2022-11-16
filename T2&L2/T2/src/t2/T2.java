@@ -66,7 +66,7 @@ public class T2 {
         
         //Q6
         // comfrence is 2pi*diameter
-        Scanner diameter = new Scanner(System.in);  // Create a Scanner object
+        Scanner diameter = new Scanner(System.in); 
         System.out.println("Enter diameter: ");
         double d = diameter.nextDouble();
         double Pi = Math.PI;
@@ -75,7 +75,7 @@ public class T2 {
         
         
         //Q7
-        Scanner inch = new Scanner(System.in);  // Create a Scanner object
+        Scanner inch = new Scanner(System.in);  
         System.out.println("Enter value in inch: ");
         double i = inch.nextDouble();
         double cm = i * 2.54;

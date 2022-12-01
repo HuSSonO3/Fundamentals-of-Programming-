@@ -182,10 +182,26 @@ public class L4 {
         System.out.println("Enter prinicipal amount: "); 
         int pri = principal.nextInt();
         System.out.println("Enter interest in %: "); 
-        int intrest = principal.nextInt();
+        double intrest = principal.nextDouble();
         System.out.println("Enter total number of month(s): "); 
         int months = principal.nextInt();
         
+        double payment = (pri *(intrest/1200))/ (1- Math.pow((1+(intrest/1200)), (-months)));
+        int curMon=0;   
+        double priDue , intrestDue, remaining, totalIntrest = 0;
+        System.out.println("Month      Monthly Payment     Principal    Interest     Unpaid Balance    Total Interest");
+        for (int i = 0; i < months; i++)
+        {   
+            
+            curMon = (i+ 1 +months)-months;
+            priDue = payment * Math.pow((1+ (intrest/1200)), -(1+months-curMon));
+            intrestDue = payment - priDue;
+            remaining = intrestDue/ (intrest/1200) - priDue;
+            totalIntrest += intrestDue;
+            System.out.printf("%d          %.2f              %.2f       %.2f        %.2f           %.2f\n",curMon,payment,priDue,intrestDue,remaining,totalIntrest);
+
+            
+        }
         
         
         //Q8
